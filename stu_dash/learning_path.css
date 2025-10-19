@@ -1,0 +1,74 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #b49018;
+}
+
+.path-section {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative; /* For positioning the time badge */
+}
+
+.path-section h5 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: space-between; /* Align h5 text and time badge */
+}
+
+.path-section p, 
+.path-section ul {
+    color: #ddd;
+}
+
+.path-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* ul li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* Time Badge for Duration */
+.time-badge {
+    background-color: #b49018;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+ul li .time-badge {
+    margin-left: auto; /* Move the badge to the right */
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+    .path-section {
+        padding: 15px;
+    }
+}
+
+.content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}

@@ -1,0 +1,137 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #b49018;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.section-subtitle {
+    color: #b49018;
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+/* Profile Section */
+.profile-section {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    border-radius: 50%;
+}
+
+/* Input Section */
+.input-label {
+    color: #b49018;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#queryInput {
+    width: 100%;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#queryInput:focus {
+    outline: none;
+    border-color: #b49018;
+    box-shadow: 0 0 10px rgba(180, 144, 24, 0.3);
+}
+
+.btn-submit {
+    background-color: #b49018;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-submit:hover {
+    background-color: #9c7f16;
+    transform: scale(1.05);
+}
+
+.query-status {
+    font-size: 14px;
+    color: #6c757d;
+    transition: opacity 0.3s ease;
+}
+
+/* Response Section */
+.response-section {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.response-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+    animation: fadeIn 0.5s ease;
+}
+
+.response-item:last-child {
+    border-bottom: none;
+}
+
+.response-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.instructor-name {
+    font-weight: bold;
+    color: #b49018;
+}
+
+.response-time {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.response-text {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Content */
+.content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}

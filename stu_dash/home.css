@@ -1,0 +1,359 @@
+/* General Styles */
+.txt-primary {
+    color: #06BBCC;
+}
+.bgd-primary
+{
+    background-color: #06BBCC;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+.bgd-dark {
+    background-color: #f8f9fa;
+}
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #1b032a; 
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    overflow-y: scroll;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.sidebar .nav-link:hover,
+.sidebar .nav-link.active {
+    color: #1f2833;
+    background-color: #66fcf1;/*#5a54e7*/
+    border-radius: 8px;
+}
+
+.sidebar img {
+    width: 100px;
+}
+/* Streak and Score */
+.streak-score h5 {
+    color: #6c63ff;
+}
+
+.streak-score p {
+    font-size: 1.2em;
+}
+/* Content */
+.content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+.text-purple {
+    color: #6c63ff;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+/* Cards */
+.card {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 600;
+}
+
+.btn-purple {
+    background-color: #45a29e;
+    color: white;
+}
+
+.btn-purple:hover {
+    background-color: #45a29e;
+}
+
+.btn-outline-purple {
+    border-color: #45a29e;
+    color: #6c63ff;
+}
+
+.btn-outline-purple:hover {
+    background-color: #45a29e;
+    color: white;
+}
+
+.progress-bar {
+    background-color: #6c63ff;
+}
+
+/* List Group */
+.list-group-item {
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 10px 15px;
+}
+html {
+    scroll-behavior: smooth;
+}
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 4px;
+    left: -40px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 5px;
+    left: -60px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+
+
+
+
+
+
+
+/* Dashboard Content */
+.text-purple {
+    color: #6c63ff;
+}
+
+.btn-purple {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+.btn-outline-purple {
+    border: 2px solid #6c63ff;
+    color: #6c63ff;
+}
+
+.btn-outline-purple:hover {
+    background-color: #6c63ff;
+    color: #fff;
+}
+
+/* Progress Bar */
+.bg-purple {
+    background-color: #6c63ff !important;
+}
+
+/* Video Section */
+.videos-section {
+    margin-top: 40px;
+}
+
+.videos-section h5 {
+    font-size: 1.5rem;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive::before {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.embed-responsive .embed-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+.floating-action-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 20;
+    background: transparent;
+}
+
+.fab-btn {
+    width: 128px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    
+    /* Premium gradient background */
+    background: linear-gradient(135deg, #d4af37 0%, #b49018 50%, #8b6f14 100%);
+    
+    /* Layered shadows for depth */
+    /* box-shadow: 
+        0 4px 15px rgba(180, 144, 24, 0.4),
+        0 8px 25px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.2); */
+    
+    /* Smooth transitions */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    background-image: url('img/chatbot-before-hover-removebg-preview.png');
+    background-size: cover;
+
+}
+
+/* Animated gradient overlay */
+.fab-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 50%;
+    background: linear-gradient(45deg, 
+        transparent 30%, 
+        rgba(255, 255, 255, 0.15) 50%, 
+        transparent 70%);
+    opacity: 1;
+    animation: shimmer 2s ease-in-out infinite;
+    transition: opacity 0.4s ease;
+}
+
+/* Subtle shine effect */
+.fab-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, 
+        rgba(255, 255, 255, 0.3) 0%, 
+        transparent 60%);
+    opacity: 0.5;
+    transition: transform 0.6s ease;
+}
+
+.fab-btn:hover {
+    /* Enhanced gradient on hover */
+    background: linear-gradient(135deg, #f0c84d 0%, #d4af37 50%, #b49018 100%);
+    
+    transform: scale(1.1) translateY(-2px);
+    
+    /* Elevated shadow */
+    /* box-shadow: 
+        0 8px 25px rgba(180, 144, 24, 0.5),
+        0 15px 40px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3); */
+    background-image: url('img/chatbot-hover-removebg-preview.png');
+    background-size: cover;
+}
+
+.fab-btn:hover::before {
+    opacity: 0;
+    animation: none;
+}
+
+.fab-btn:hover::after {
+    transform: scale(1.5);
+}
+
+.fab-btn:active {
+    transform: scale(1.05) translateY(0);
+    box-shadow: 
+        0 4px 12px rgba(180, 144, 24, 0.4),
+        0 6px 20px rgba(0, 0, 0, 0.15),
+        inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.fab-icon {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+}
+
+.fab-btn:hover .fab-icon {
+    transform: rotate(360deg) scale(1.1);
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%) rotate(45deg);
+    }
+    100% {
+        transform: translateX(100%) rotate(45deg);
+    }
+}
+
+/* Optional: Pulse animation for attention */
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 
+            0 4px 15px rgba(180, 144, 24, 0.4),
+            0 8px 25px rgba(0, 0, 0, 0.15),
+            0 0 0 0 rgba(180, 144, 24, 0.7);
+    }
+    50% {
+        box-shadow: 
+            0 4px 15px rgba(180, 144, 24, 0.4),
+            0 8px 25px rgba(0, 0, 0, 0.15),
+            0 0 0 10px rgba(180, 144, 24, 0);
+    }
+}
+
+/* Add this class to enable pulse effect */
+.fab-btn.pulse {
+    animation: pulse 2s ease-in-out infinite;
+}

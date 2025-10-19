@@ -1,0 +1,27 @@
+/* Hide the video */
+.video-card .embed-responsive {
+    display: none;
+}
+
+/* Style the video link to display the text */
+.video-link {
+    display: block;
+    text-decoration: none;
+    color: inherit; /* This ensures the text color is not changed by the link */
+    padding: 10px;
+    border: 1px solid #ccc; /* Optional: Adds a border around the link block */
+    border-radius: 8px; /* Optional: Rounds the corners of the border */
+    background-color: #f9f9f9; /* Optional: Adds a background color */
+}
+
+.video-link:hover {
+    opacity: 0.8; /* Optional: Adds a hover effect */
+}
+
+.video-text {
+    text-align: center; /* Center align the text */
+}
+
+.card-body {
+    display: none; /* Hide card body if you want to show only the link */
+}

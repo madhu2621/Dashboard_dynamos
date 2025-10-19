@@ -1,0 +1,131 @@
+/* Base Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for all cards */
+.container {
+    margin-top: 30px;
+}
+
+/* Dashboard Heading */
+h1 {
+    text-align: center;
+    color: #4a90e2;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Card Styling */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #4a90e2;
+    padding-bottom: 8px;
+}
+
+/* Assignment List Styling */
+.list-group-item {
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+/* Pending Assignments */
+.pending {
+    border-left: 5px solid #f39c12;
+}
+
+/* Completed Assignments */
+.completed {
+    border-left: 5px solid #27ae60;
+    color: #7f8c8d;
+}
+
+/* Quiz List */
+.quiz-list .list-group-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 5px solid #4a90e2;
+}
+
+/* Hover Effect on Assignments */
+.list-group-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #45a29e;
+    border-color: #45a29e;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #45a29e;
+    transform: scale(1.05);
+}
+
+/* Score Styling */
+.score {
+    font-weight: 600;
+    color: #2ecc71;
+    font-size: 1rem;
+}
+
+.quiz-name {
+    font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .list-group-item {
+        font-size: 1rem;
+    }
+}
+
+/* Custom Animation for Heading */
+h1 {
+    position: relative;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

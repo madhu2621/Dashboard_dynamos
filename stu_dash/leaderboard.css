@@ -1,0 +1,141 @@
+/* Container for the entire leaderboard */
+
+.leaderboard {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+}
+
+/* Top three podium styles */
+.top-three {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 30px;
+}
+
+.podium {
+    display: flex;
+    align-items: flex-end;
+}
+
+.student {
+    width: 180px;
+    margin: 0 15px;
+    text-align: center;
+    color: #000;
+    position: relative;
+}
+
+.first {
+    z-index: 3;
+}
+
+.second {
+    z-index: 2;
+    transform: translateY(20px);
+}
+
+.third {
+    z-index: 1;
+    transform: translateY(20px);
+}
+
+.trophy {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.info {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.name {
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.score,
+.streak {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Table of remaining students */
+.remaining-students {
+    margin-top: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #f1f1f1;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    color: #333;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 600px) {
+    .top-three {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .podium {
+        flex-direction: column;
+    }
+
+    .student {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .first, .second, .third {
+        transform: translateY(0);
+    }
+
+    .remaining-students table {
+        font-size: 0.9em;
+    }
+}

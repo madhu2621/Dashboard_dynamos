@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student - Leaderboard</title>
+    <link rel="shortcut icon" type="x-icon" href="../img/ll_logo.png">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="leaderboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    
+    <!-- Navbar will be dynamically inserted here by student_navbar.js -->
+
+    <div class="content leaderboard">
+        <div class="top-three" id="top-three-container">
+            <!-- Top 3 students will be dynamically inserted here -->
+        </div>
+        <div class="remaining-students mt-4">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Student Name</th>
+                        <th>Score</th>
+                        <th>Streak</th>
+                    </tr>
+                </thead>
+                <tbody id="remaining-students-container">
+                    <!-- Remaining students will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Include the student navbar script -->
+    <script src="student_navbar.js"></script>
+    <!-- Include the leaderboard data script -->
+    <script src="students_leaderboard.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Chart.js for Performance Graph -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</body>
+</html>
