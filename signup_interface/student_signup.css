@@ -1,0 +1,154 @@
+/* Reset some default browser styles */
+body, h2, p, label {
+    margin: 0;
+    padding: 0;
+}
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* Set background image and font */
+body {
+    background-image: url('wallpaperflare.com_wallpaper\ \(1\).jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.signup-box {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(244, 243, 243, 0.771);
+    width: 500px;
+    backdrop-filter: blur(4px);
+}
+
+/* Style for heading */
+.signup-box h2 {
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Style for form rows to align items side by side */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Space between columns */
+    margin-bottom: 15px;
+}
+
+.textbox {
+    flex: 1; /* Make each input take equal space */
+}
+
+.textbox label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.textbox input, .textbox textarea, .textbox select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #faf6f6;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.textbox textarea {
+    resize: vertical;
+}
+
+/* Style for the signup button */
+.btn {
+    width: 100%;
+    background-color: #45a29e;
+    font-weight: bold;
+    border: none;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: aqua;
+}
+
+/* Style for the login link */
+.login-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-link a {
+    color: aqua;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Change background color of dropdown */
+.textbox select {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* White text color for contrast */
+}
+
+/* Optional: Customize the dropdown arrow if needed */
+.textbox select::-ms-expand {
+    display: none; /* Hide the default dropdown arrow in IE */
+}
+
+.textbox input,textarea,select,option {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.584);
+    color: rgba(255, 255, 255, 0.584);
+}
+
+h4{
+    color: #ffffff;
+}
+
+#photo::file-selector-button {
+    color: white;               /* White text */
+    background-color: #333;    /* Black background */
+    border: 1px solid white;    /* White border for contrast */
+    padding: 5px 10px;          /* Padding for better spacing */
+    cursor: pointer;            /* Pointer cursor on hover */
+    border-radius: 4px;         /* Rounded corners */
+}
+
+#photo::file-selector-button:hover {
+    background-color: black;     /* Slightly lighter black on hover */
+}
+
+#dob::-webkit-calendar-picker-indicator {
+    filter: invert(1);         /* Inverts the color to white */
+    cursor: pointer;           /* Changes the cursor to a pointer */
+}
+
+#dob:hover::-webkit-calendar-picker-indicator {
+    filter: invert(0.8);       /* Slightly darker icon on hover */
+}

@@ -1,0 +1,102 @@
+/* Reset some default styles */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column; /* To center the content vertically */
+}
+
+/* Styling for the logo on the top left corner */
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Heading styling */
+.heading-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container to center and space out the member cards */
+.container {
+  display: flex;
+  gap: 20px;
+  max-width: 800px;
+  width: 50%;
+  padding: 20px;
+  justify-content: center;
+}
+
+/* Basic styling for each member card */
+.member-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Styling for the image inside the card */
+.admin-image, .instructor-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Specific image sizes */
+.admin-image {
+  height: 130px;
+  width: 130px;
+}
+
+.instructor-image {
+  height: 100px;
+  width: 100px;
+}
+
+/* Styling for the headings */
+.member-card h2 {
+  color: #333;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+/* Styling for the paragraphs */
+.member-card p {
+  color: #666;
+}
+
+/* Hover effects for the member cards */
+.member-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.bg-container {
+  background-color: #181d38;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instructor Signup</title>
+    <link rel="shortcut icon" type="x-icon" href="../img/ll_logo.png">
+    <link rel="stylesheet" href="instructor_signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Instructor Signup</h2>
+            <form id="instructorForm" action="#" method="post" enctype="multipart/form-data">
+                <!-- Form fields remain exactly the same as before -->
+                <h4 class="name">Admin ID</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="text" id="adminID" name="adminID" placeholder="Admin ID" required>
+                    </div>
+                </div>
+
+                <h4 class="name">Name of the Instructor</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+                
+                <h4 class="name">Email</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="email" id="email" name="email" placeholder="E-mail Address" required>
+                    </div>
+                </div>
+                
+                <h4 class="name">Date of Birth</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number (+91)" required>
+                    </div>
+                </div>
+                
+                <h4 class="name">Gender</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select your gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <h4 class="name">Course Specialization</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <select id="specialization" name="specialization" required>
+                            <option value="" disabled selected>Select Specialization</option>
+                            <option value="web-development">Web Development</option>
+                            <option value="programming-languages">Programming Languages</option>
+                            <option value="machine-learning">Machine Learning</option>
+                            <option value="artificial-intelligence">Artificial Intelligence</option>
+                            <option value="cyber-security">Cyber Security</option>
+                            <option value="iot">Internet of Things</option>
+                            <option value="data-science">Data Science</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <h4 class="name">Address</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="text" id="address" name="address" placeholder="Street Address" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="text" id="city" name="city" placeholder="City" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="text" id="zipCode" name="zipCode" placeholder="Postal / Zip Code" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="text" id="country" name="country" placeholder="Country" required>
+                    </div>
+                </div>
+                
+                <h4 class="name">Education Qualification</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <select id="education" name="education" required>
+                            <option value="" disabled selected>Select Highest Qualification</option>
+                            <option value="phd">Ph.D</option>
+                            <option value="masters">Masters Degree</option>
+                            <option value="bachelors">Bachelors Degree</option>
+                            <option value="diploma">Diploma</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <h4 class="name">Experience</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <select id="experience" name="experience" required>
+                            <option value="" disabled selected>Select Years of Experience</option>
+                            <option value="0-2">0-2 years</option>
+                            <option value="2-5">2-5 years</option>
+                            <option value="5-10">5-10 years</option>
+                            <option value="10+">10+ years</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <h4 class="name">Upload Profile Photo</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="file" id="photo" name="photo" accept="image/*" required>
+                    </div>
+                </div>
+                
+                <h4 class="name">Set Password</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="textbox">
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="checkbox">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <label for="terms">I agree to the <a href="#" onclick="showTerms()">Terms and Conditions</a></label>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn">Register</button>
+                <p class="login-link">Already have an account? <a href="../login_interface/instructor_login.html">Login here</a></p>
+            </form>
+            
+            <!-- Admin tools (for testing) -->
+            <div style="margin-top: 20px; padding: 10px; border-top: 1px solid #ccc;">
+                <button onclick="viewInstructors()" style="background: #28a745; margin: 5px;">View All Instructors</button>
+                <button onclick="exportInstructors()" style="background: #17a2b8; margin: 5px;">Export Data</button>
+                <button onclick="clearInstructors()" style="background: #dc3545; margin: 5px;">Clear All Data</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include the instructor details script -->
+    <script src="instructor_signup_details.js"></script>
+    
+    <script>
+        // Form submission handler - LOCAL STORAGE ONLY
+        document.getElementById('instructorForm').addEventListener('submit', async function(event) {
+            event.preventDefault();
+            
+            const password = document.getElementById('password').value;
+            const confirmPassword = document.getElementById('confirmPassword').value;
+            const terms = document.getElementById('terms').checked;
+
+            // Password validation
+            if (password !== confirmPassword) {
+                alert('Passwords do not match. Please try again.');
+                return;
+            }
+
+            if (password.length < 6) {
+                alert('Password must be at least 6 characters long.');
+                return;
+            }
+
+            if (!terms) {
+                alert('Please agree to the Terms and Conditions.');
+                return;
+            }
+
+            const formData = new FormData(this);
+
+            try {
+                // Show loading state
+                const submitBtn = event.target.querySelector('button[type="submit"]');
+                const originalText = submitBtn.textContent;
+                submitBtn.textContent = 'Registering...';
+                submitBtn.disabled = true;
+
+                console.log('📝 Processing instructor registration...');
+                
+                // Validate form data
+                const validationErrors = window.instructorSignupAPI.validateFormData(formData);
+                if (validationErrors.length > 0) {
+                    alert('Please fix the following errors:\n' + validationErrors.join('\n'));
+                    return;
+                }
+
+                // Add to local storage
+                const newInstructor = await window.instructorSignupAPI.addInstructorRegistration(formData);
+                
+                console.log('✅ Registration successful!');
+                console.log('👤 Instructor ID:', newInstructor.id);
+                console.log('📊 Total instructors:', window.instructorSignupAPI.getAllRegistrations().length);
+                
+                alert(`Registration successful!\nYour Instructor ID: ${newInstructor.id}\nYou can now login with your email and password.`);
+                
+                // Reset form
+                this.reset();
+                localStorage.removeItem('instructorFormDraft');
+                
+                // Optionally redirect to login page
+                // window.location.href = 'instructor_login.html';
+
+            } catch (error) {
+                console.error('❌ Registration error:', error);
+                alert('Error during registration: ' + error.message);
+            } finally {
+                // Reset button state
+                const submitBtn = event.target.querySelector('button[type="submit"]');
+                if (submitBtn) {
+                    submitBtn.textContent = 'Register';
+                    submitBtn.disabled = false;
+                }
+            }
+        });
+
+        // Admin functions for testing
+        function viewInstructors() {
+            const instructors = window.instructorSignupAPI.getAllRegistrations();
+            const stats = window.instructorSignupAPI.getRegistrationStats();
+            
+            let message = `Total Instructors: ${stats.total}\n\n`;
+            instructors.forEach(instructor => {
+                message += `ID: ${instructor.id}\nName: ${instructor.firstName} ${instructor.lastName}\nEmail: ${instructor.email}\nSpecialization: ${instructor.specialization}\n\n`;
+            });
+            
+            alert(message);
+        }
+
+        function exportInstructors() {
+            window.instructorSignupAPI.exportRegistrations();
+            alert('Instructor data exported as JSON file!');
+        }
+
+        function clearInstructors() {
+            if (window.instructorSignupAPI.clearAllInstructorData()) {
+                alert('All instructor data cleared!');
+            }
+        }
+
+        // Terms and conditions modal
+        function showTerms() {
+            const termsContent = `
+                <div style="padding: 20px; max-width: 500px;">
+                    <h3>Terms and Conditions</h3>
+                    <p>By registering as an instructor, you agree to:</p>
+                    <ul>
+                        <li>Provide accurate and up-to-date information</li>
+                        <li>Maintain professional conduct with students</li>
+                        <li>Respect intellectual property rights</li>
+                        <li>Follow platform guidelines and policies</li>
+                        <li>Keep student information confidential</li>
+                    </ul>
+                    <p>We reserve the right to remove instructors who violate these terms.</p>
+                    <button onclick="this.parentElement.parentElement.close()" style="padding: 10px 20px; background: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer;">Close</button>
+                </div>
+            `;
+            
+            const dialog = document.createElement('dialog');
+            dialog.innerHTML = termsContent;
+            document.body.appendChild(dialog);
+            dialog.showModal();
+        }
+
+        // Page load
+        window.addEventListener('load', function() {
+            console.log('🚀 Instructor signup page loaded');
+            console.log('📊 Current instructors:', window.instructorSignupAPI.getAllRegistrations().length);
+        });
+    </script>
+</body>
+</html>

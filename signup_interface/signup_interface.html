@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin SignUp</title>
+    <link rel="shortcut icon" type="x-icon" href="../img/ll_logo.png">
+    <link rel="stylesheet" href="signup_interface.css">
+</head>
+<body class="bg-container">
+    <!-- Top left corner logo -->
+     <div class="logo">
+        <h2 style="color: aqua;">
+            <img style="height: 50px; width: 50px;" src="../img/ll_logo.png" />
+               LearnLoop</h3>
+     </div>
+
+
+    <!-- Centered heading -->
+    <h1 style="color: antiquewhite;">Choose a role</h1>
+    
+    <div class="container">
+        <div class="member-card" onclick="navigateTo('student_signup.html')">
+            <img class="admin-image" src="img/student.jpg"/>
+            <h2>Student</h2>
+            <p>SignUp</p>
+        </div>
+        <div class="member-card" onclick="navigateTo('instructor_signup.html')">
+            <div style="margin-top: 10px;"><img class="instructor-image" src="img/instructor1.png"/></div>
+            <div style="margin-top: 15px;">
+                <h2 class="Instructor">Instructor</h2>
+                <p>SignUp</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function navigateTo(page) {
+            window.location.href = page;
+        }
+    </script>
+</body>
+</html>

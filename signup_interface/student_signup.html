@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Signup</title>
+    <link rel="shortcut icon" type="x-icon" href="../img/ll_logo.png">
+    <link rel="stylesheet" href="student_signup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="signup-box">
+            <h2>Student Signup</h2>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <h4 class="name">Admin ID</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="college">College/University</label>-->
+                            <input type="tel" id="adminID" name="adminID" placeholder="ID" required>
+                        </div>
+                </div>
+                <h4 class="name">Name of the Student</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                    <!--   <label for="name">First Name</label>--> 
+                        <input type="text" id="name" name="firstName" placeholder="First Name" required>
+                    </div>
+                    <div class="textbox">
+                    <!--    <label for="name1">Last Name</label>-->
+                        <input type="text" id="name1" name="lastName" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <h4 class="name">Email</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                    <!--    <label for="email">Email</label>-->
+                        <input type="email" id="email" name="email" placeholder="E-mail Address" required>
+                    </div>
+                </div>
+                <h4 class="name">Date Of Birth</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                    <!--    <label for="dob">Date of Birth</label>-->
+                        <input type="date" id="dob" name="dob" class="custom-date-input" required>
+                    </div>
+                    <div class="textbox">
+                    <!--    <label for="phone">Phone Number</label>-->
+                        <input type="tel" id="phone" name="phone" placeholder="+91" required>
+                    </div>
+                </div>
+                <h4 class="name">Gender</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                    <!--    <label for="gender">Gender</label>-->
+                        <select id="gender" name="gender" required>
+                            <option value="" disabled selected>Select gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <h4 class="name">University Name</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="college">College/University</label>-->
+                            <input type="text" id="university" name="university" placeholder="Current University" required>
+                        </div>
+                </div>
+                <h4 class="name">Address</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="address">Address</label>-->
+                            <input type="text" id="address" name="address" placeholder="Street address" rows="4" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="address">Address</label>-->
+                            <input type="text" id="city" name="city" placeholder="city"  required>
+                    </div>
+                    <div class="textbox">
+                        <!--    <label for="address">Address</label>-->
+                            <input type="tel" id="pin code" name="zipCode" placeholder="postal / zip code"  required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="address">Address</label>-->
+                            <input type="text" id="country" name="country" placeholder="country"  required>
+                    </div>
+                </div>
+                <h4 class="name">Select Domain</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="domain">Interested Domain</label>
+                            <input type="text" id="domain" name="domain" placeholder="Interested Domain" required> -->
+                            <select id="domain" name="domain" required>
+                                <option value="" disabled selected>Select domain</option>
+                                <option value="webD">Web Devolopment</option>
+                                <option value="lang">Programming Languages</option>
+                                <option value="ML">Machine Learning</option> 
+                                <option value="AI">Artificial Intelligence</option> 
+                                <option value="CS">Cyber Security  </option>
+                                <option value="IoT">Internet of Things</option>                          
+                            </select>
+                    </div>
+                </div>
+                <h4 class="name">Education Qualification</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="education">Education Qualification</label>-->
+                            <input type="text" id="education" name="education" placeholder="Education Qualification" required>
+                    </div>
+                </div>
+                <h4 class="name">Graduation Year</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="year">Year of Passing</label>
+                            <input type="text" id="year" name="year" placeholder="Year of Passing(2020-2024)" required>  -->
+                            <select id="year" name="graduationYear" required>
+                                <option value="" disabled selected>Year of Graduation</option>
+                                <option value="year">2029</option>
+                                <option value="year">2028</option>
+                                <option value="year">2027</option> 
+                                <option value="year">2026</option> 
+                                <option value="year">2025</option>
+                                <option value="year">2024</option>
+                                <option value="year">2023</option> 
+                                <option value="year">2022</option>
+                                <option value="year">2021</option>                          
+                            </select>
+                    </div>
+                </div>
+                <h4 class="name">Upload Photo</h4>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!--    <label for="photo">Upload Photo</label>-->
+                        <input type="file" id="photo" name="photo" accept="Upload Photo" class="custom-file-input" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="textbox">
+                        <!-- <h4 class="name">Set Password</h4> -->
+                        <input type="password" id="setPassword" name="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="textbox">
+                        <!-- <h4 class="name">Confirm Password</h4> -->
+                        <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter your password" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Register</button>
+            <!--    <p class="login-link">Already have an account? <a href="#">Login</a></p>-->
+            </form>
+        </div>
+    </div>
+    
+        <script src="student_signup_details.js"></script>
+<script>
+    const form = document.querySelector('form');
+    const passwordInput = document.getElementById('setPassword');
+    const confirmPasswordInput = document.getElementById('confirmPassword');
+
+    form.addEventListener('submit', async (event) => {
+        event.preventDefault();
+
+        const formData = new FormData(form);
+
+        // Client-side validation
+        const validationErrors = window.studentSignupAPI.validateFormData(formData);
+        
+        if (validationErrors.length > 0) {
+            alert('Please fix the following errors:\n' + validationErrors.join('\n'));
+            return;
+        }
+
+        // Password validation
+        if (passwordInput.value !== confirmPasswordInput.value) {
+            alert('Passwords do not match. Please try again.');
+            return;
+        }
+
+        try {
+            // Add to local JavaScript storage
+            const newStudent = window.studentSignupAPI.addStudentRegistration(formData);
+            
+            // Show success message with student ID
+            alert(`Registration successful! Your Student ID: ${newStudent.id}`);
+
+            // Log to console for verification
+            console.log('All registrations:', window.studentSignupAPI.getAllRegistrations());
+            console.log('Registration stats:', window.studentSignupAPI.getRegistrationStats());
+
+            // Optional: Export data (for admin purposes)
+            // window.studentSignupAPI.exportRegistrations();
+
+            // Send to backend API
+            const response = await fetch('http://localhost:5000/api/std_signup', {
+                method: 'POST',
+                body: formData
+            });
+
+            const data = await response.json();
+
+            if (response.ok && data.message === 'Student registered successfully!') {
+                form.reset();
+                window.location.href = '../login_interface/login.html';
+            } else {
+                alert(`Backend registration issue: ${data.message || 'Unknown error.'}`);
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            // alert('An error occurred during registration. Please try again later.');
+        }
+    });
+
+    // Optional: Add real-time validation
+    document.getElementById('email').addEventListener('blur', function() {
+        const email = this.value;
+        if (email && window.studentSignupAPI.getAllRegistrations().some(student => student.email === email)) {
+            alert('This email is already registered!');
+            // this.focus();
+        }
+    });
+</script>
+
+    
+    </body>
+
+</html>
